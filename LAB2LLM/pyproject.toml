@@ -1,0 +1,22 @@
+[project]
+name = "labo2mll"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "gagordillousistemas-dotcom", email = "gagordillo_usistemas@intep.edu.co" }
+]
+requires-python = ">=3.11"
+dependencies = [
+    "google-genai>=3.5.0",
+    "ollama>=0.6.3",
+    "python-dotenv>=1.2.4",
+    "streamlit>=1.67.0",
+]
+
+[project.scripts]
+labo2mll = "labo2mll:main"
+
+[build-system]
+requires = ["uv_build>=0.12.19,<0.13.0"]
+build-backend = "uv_build"
